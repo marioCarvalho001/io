@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="arquivos.css/style.css">
+  <link rel="stylesheet" href="arquivos.css/responsivo.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="arquivos.css/mobile.css" media="screen and (max-width: 700px)">
+  <title>IO</title>
+</head>
+
+<body class="body_white">
+  <header>
+    <div class="barra_menu menu_black">
+      <a href="inicio.html"><img src="img/icone_menu_preto.svg" alt="logo_branca" style="width: 60px; margin-top: 5px;"></a>
+      <nav class="navegacao_menu js-menu_hamburguer">
+        <ul role="menu">
+          <a href="inicio.html">
+            <li>Inicio</li>
+          </a>
+          <a href="galeria.html">
+            <li>Galeria</li>
+          </a>
+          <a href="blog.html">
+            <li>Blog</li>
+          </a>
+        </ul>
+        <a href="contato.html"><button class="button_estilo">Contatos</button></a>
+      </nav>
+      <button class="js-button_hamburguer" aria-expanded="false" aria-controls="navegacao_menu" aria-haspopup="true" aria-label="Abrir menu">Menu
+        <span class="icone_hamburguer"></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="sessao_galeria">
+    <div class="header_galeria">
+      <div class="container_pesquisa">
+        <img src="img/lupa.svg" alt="" class="lupa">
+        <input type="text" placeholder="pesquisa" class="input_nav">
+        <button type="submit">➤</button>
+      </div>
+      <article>
+        <h2>Galeria de Projetos</h2>
+        <p>Bem Vindo a Galeria da iO, aqui você terá acesso aos meus projetos
+          e trabalhos, já realizados. Essa área é destinada para publicação de
+          projetos já prontos! para informações do codigos e prototipos
+          acoselho a acessa meu <a href="https://github.com/marioCarvalho001" target="_blank">Github</a> e <a href="https://www.behance.net/marioCarvalho001" target="_blank">Behance.</a></p>
+      </article>
+    </div>
+
+    <div class="container_projetos">
+      <h1>portfólio</h1>
+      <div class="sessao_sites js-sessao_site">
+        <img src="img/arrow_esquerda.svg" alt="seta esquerda" class="js_arrow">
+        <ul>
+          <li><img src="img/amazonia_portifolio.jpg" alt="site amazonia">Amazonia Blog</li>
+          <li><img src="img/wolf_portifolio.jpg" alt="site wolf">Wolf Blog</li>
+          <li><img src="img/bikcraft_portifolio.jpg" alt="site bikcraft">bikcraft</li>
+        </ul>
+        <img src="img/arrow_direita.svg" alt="seta direita" class="js_arrow">
+      </div>
+
+      <div class="sessao_prototipos js-prototipos">
+        <img src="img/arrow_esquerda.svg" alt="seta esquerda" class="js_arrow_prototipo">
+        <ul>
+          <li><img src="img/prototipo_blog.jpg" alt="site amazonia">Amazonia Blog</li>
+          <li><img src="img/prototipo_surf.jpg" alt="site wolf">Surf</li>
+        </ul>
+        <img src="img/arrow_direita.svg" alt="seta direita" class="js_arrow_prototipo">
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <footer>
+    <section class="sessao_menu_conteudo">
+      <nav class="menu_conteudo">
+        <div>
+          <h2>Freelancers</h2>
+          <a href="manutencao.html"><img src="img/freelancer.png" alt="freelancer"></a>
+        </div>
+        <div>
+          <h2>Programação</h2>
+          <a href="manutencao.html"><img src="img/programacao.png" alt="Programação"></a>
+        </div>
+        <div>
+          <h2>Lugares para viajar</h2>
+          <a href="manutencao.html"><img src="img/viagens.png" alt="viagens"></a>
+        </div>
+      </nav>
+    </section>
+
+    <div class="menu_footer">
+      <ul>
+        <h2>Inicio</h2>
+        <li>
+          <a href="index.html">Apresentação</a>
+        </li>
+        <li>
+          <a href="inicio.html">sobre</a>
+        </li>
+      </ul>
+
+      <ul>
+        <h2>Galeria</h2>
+        <li><a href="galeria.html">portifolio</a></li>
+        <li><a href="galeria.html">prototipos</a></li>
+      </ul>
+      <ul>
+        <h2>Blog</h2>
+        <li><a href="blog.html">viagens</a></li>
+        <li><a href="blog.html">artigos</a></li>
+        <li><a href="blog.html">fotos</a></li>
+      </ul>
+      <ul>
+        <h2>Contatos</h2>
+        <li><a href="contato.html">Mensagem</a></li>
+        <li><a href="mailto:mariocarvalho755@gmail.com">e-mail</a></li>
+        <li><a href="https://www.workana.com/freelancer/5b7d940b04326bb69617fd01150c40f5" target="_blank">workana</a></li>
+        <li><a href="https://www.linkedin.com/in/mario-carvalho-4204a3182/" target="_blank">Linkedin</a></li>
+      </ul>
+    </div>
+    <div class="barra_final">
+      <p>©Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+
+</html>

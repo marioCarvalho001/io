@@ -1,0 +1,97 @@
+
+.nome_botton{
+  margin-top: 150px;
+}
+.menu_footer{
+  padding: 30px 50px 20px 50px;
+}
+
+/*barra de menu*/
+.barra_menu{
+  padding: 0 50px;
+  grid-template-columns: 1fr 3fr;
+}
+
+
+/*sessao boas vindas*/
+.bem_vindo{
+  padding: 100px 50px 0 50px;
+}
+.container_bem_vindo{
+  flex-direction: column;
+  align-items: center;
+}
+.article_boa_vindas{
+  padding-top: 70px;
+}
+.article_boa_vindas h2{
+  margin-bottom: 40px;
+}
+/*container sobre*/
+.container_sobre{
+  flex-direction: column;
+  align-items: center;
+}
+.habilidades_lista{
+  margin-bottom: 100px;
+}
+/*menu de conteudo do footer*/
+.sessao_menu_conteudo::before{
+  width: 400px;
+}
+.menu_conteudo{
+  display: block;
+  margin-bottom: 50px;
+}
+.menu_conteudo h2{
+  margin-top: 50px;
+}
+.menu_conteudo a img{
+  margin-bottom: 50px;
+}
+/*Galeria*/
+.header_galeria{
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.sessao_sites ul, .sessao_prototipos ul{
+flex-direction: column;
+}
+.sessao_sites li img, .sessao_prototipos li img{
+  width: 400px;
+}
+/* barra de pesquisa da galeria*/
+.container_pesquisa{
+  width: 400px;
+}
+/*blog*/
+.header_blog{
+  height: 350px;
+}
+.sessao_fotos{
+  width: 100%;
+  height: 200px;
+}
+.sessao_viagen_artigo{
+  flex-direction: column;
+  align-items: center;
+}
+.sessao_viagens, .sessao_artigos{
+  width: 400px;
+  height: 350px;
+}
+.sessao_viagens{
+  margin-bottom: 100px;
+}
+/*sessao contato*/
+
+.container_formulario{
+  padding: 100px 50px 50px 50px;
+  flex-direction: column;
+  align-items: center;
+}
+.sessao_formulario{
+  margin-bottom: 50px;
+}
+
