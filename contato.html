@@ -39,20 +39,24 @@
   <section class="container_formulario">
 
     <div class="sessao_formulario">
-      <span>
-        <h2>Formulario</h2>
-      </span>
-      <label for="">Nome</label>
-      <input type="text" placeholder="Nome" class="js-input">
-      <label for="">contato de preferencia</label>
-      <div>
-        <input type="text" placeholder="(99)9999-9999" class="js-input">
-        <input type="text" placeholder="@gmail.com" class="js-input">
-      </div>
-      <label for="">Assunto</label>
-      <textarea name="assunto" id="" cols="30" rows="10"></textarea>
 
-      <button>Enviar</button>
+      <form method="POST" action="php/envio.php">
+        <span>
+          <h2>Formulario</h2>
+        </span>
+        <label for="">Nome</label>
+        <input name="nome" type="text" placeholder="Nome">
+        <label for="">contato de preferencia</label>
+        <div>
+          <input name="telefone" type="tel" placeholder="(99)9999-9999">
+          <input name="gmail" type="text" placeholder="@gmail.com">
+        </div>
+        <label for="">Assunto</label>
+        <textarea name="assunto" cols="30" rows="10"></textarea>
+
+        <button name="enviado" type="submit">Enviar</button>
+      </form>
+
 
     </div>
     <div class="sessao_redes_sociais">

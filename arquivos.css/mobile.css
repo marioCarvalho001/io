@@ -13,22 +13,26 @@
   font-size: 1em;
 }
 .nome_botton{
-  margin-top:150px;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
 }
 /*Menu Footer*/
 .menu_footer {
   display: grid;
   grid-template-columns: 150px 150px;
   grid-template-rows: 2fr 2fr;
-  grid-gap: 20px;
+  grid-gap: 15px;
   justify-content: center;
   align-items: center;
-  padding: 30px 0 20px 0;
+  padding: 30px 0 20px 20px;
 }
 .menu_footer ul {
   margin-bottom: 50px;
 }
-
+.menu_conteudo a img{
+  width: 300px;
+}
 
 /*barra de menu*/
 .barra_menu{
@@ -119,10 +123,13 @@
 
 
 .bem_vindo{
-  padding: 50px 30px;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .bem_vindo img{
-  max-width: 400px;
+  max-width: 300px;
 }
 .article_boa_vindas h2{
   font-size: 1em;
@@ -131,7 +138,17 @@
   width: 20px;
 }
 .article_boa_vindas p{
+  max-width: 300px;
   font-size: .8em;
+}
+.informacoes {
+  max-width: 300px;
+}
+.historico_profissional{
+  max-width: 300px;
+}
+.historico_profissional article{
+  width: 300px;
 }
 /*Galeria*/
 .header_galeria{
@@ -147,18 +164,33 @@
 .header_galeria p{
   max-width: 400px;
 }
-
+/*blog caixa de pesquisa*/
+.header_blog{
+  align-items: center;
+  padding-top: 50px;
+}
+.input_nav{
+  width: 300px;
+}
+.container_pesquisa{
+  width: 300px;
+}
+.sessao_viagens, .sessao_artigos{
+  width: 300px;
+  height: 200px;
+}
 /*sessao contato*/
 .container_formulario{
   padding: 0;
 }
 .sessao_formulario,
 .sessao_redes_sociais{
+  padding: 0;
   max-width: 500px;
   border: none;
 }
 .sessao_formulario input,.sessao_formulario textarea{
-  max-width: 400px;
+  max-width: 300px;
 }
 .sessao_formulario span, .sessao_redes_sociais span{
   width: 100%;

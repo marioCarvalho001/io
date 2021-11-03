@@ -45,7 +45,7 @@ body{
   height: 100vh;
   overflow: hidden;
   object-fit: cover;
-  animation: zoom 1s;
+  animation: zoom 30s;
   position: absolute;
 }
 @keyframes zoom{
@@ -532,6 +532,7 @@ footer{
   width: 600px;
   height: 600px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   box-sizing: border-box;
   padding: 40px;
@@ -566,6 +567,8 @@ textarea:focus{
   outline: none;
 }
 .sessao_formulario div input{
+  display: flex;
+  flex-wrap: wrap;
   width: 245px;
 }
 .sessao_formulario label{

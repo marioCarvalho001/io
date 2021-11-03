@@ -35,49 +35,34 @@ function navegassao(){
 
 navegassao();
 }
-ativaNavegacao()
+ativaNavegacao();
 
 
 
-function navegassaoSite(){
+
 const slides_controle = document.querySelectorAll('.js-sessao_site .js_arrow');
-const portfolio = document.querySelectorAll('.js-sessao_site ul li')
+const portfolio = document.querySelectorAll('.js-sessao_site ul li');
 
-function controleNavegacao(){
-  if (slides_controle.length && portfolio.length){
-    portfolio[0].classList.add('ativo');
-    portfolio[1].classList.add('ativo');
-  }
-  function controleAtivo(on){
-    portfolio.forEach(
-      (remove) => {
-        remove.classList.toggle('ativo');
-        portfolio[on].classList.toggle('ativo'); 
-      }); 
-  }
-  slides_controle.forEach((setaNav, on) =>{
-    setaNav.addEventListener('click', ()=> {
-      controleAtivo(on);
-    });
-  }
-  );
-}
 
-controleNavegacao();
-}
-navegassaoSite();
+
+
+
+
+
+
 
 
 
 function navegassaoPrototipo(){
   const slides_controle = document.querySelectorAll('.js-prototipos .js_arrow_prototipo');
-  const prototipo = document.querySelectorAll('.js-prototipos ul li')
+  const prototipo = document.querySelectorAll('.js-prototipos ul li');
   
   function controleNavegacao(){
     if (slides_controle.length && prototipo.length){
       prototipo[0].classList.add('ativo');
       prototipo[1].classList.add('ativo');
     }
+    
     function controleAtivo(on){
       prototipo.forEach(
         (remove) => {
@@ -92,7 +77,6 @@ function navegassaoPrototipo(){
     }
     );
   }
-  
  controleNavegacao();
 }
 navegassaoPrototipo();
