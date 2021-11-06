@@ -39,50 +39,6 @@ ativaNavegacao();
 
 
 
-
-const slides_controle = document.querySelectorAll('.js-sessao_site .js_arrow');
-const portfolio = document.querySelectorAll('.js-sessao_site ul li');
-
-
-
-
-
-
-
-
-
-
-
-function navegassaoPrototipo(){
-  const slides_controle = document.querySelectorAll('.js-prototipos .js_arrow_prototipo');
-  const prototipo = document.querySelectorAll('.js-prototipos ul li');
-  
-  function controleNavegacao(){
-    if (slides_controle.length && prototipo.length){
-      prototipo[0].classList.add('ativo');
-      prototipo[1].classList.add('ativo');
-    }
-    
-    function controleAtivo(on){
-      prototipo.forEach(
-        (remove) => {
-          remove.classList.toggle('ativo');
-        }); 
-      prototipo[on].classList.toggle('ativo');
-    }
-    slides_controle.forEach((setaNav, on) =>{
-      setaNav.addEventListener('click', ()=> {
-        controleAtivo(on);
-      });
-    }
-    );
-  }
- controleNavegacao();
-}
-navegassaoPrototipo();
-
-
-
 function btn_hamburguer(){
 const menuHamnurguer = document.querySelector('.js-menu_hamburguer');
 const menuBotton = document.querySelector('.js-button_hamburguer');
@@ -105,3 +61,39 @@ menuBotton.addEventListener('touchstart', menuAtivo);
 btn_hamburguer();
 
 
+
+
+
+
+ 
+function navegassaoAtiva(){
+
+const divProjetos = document.querySelectorAll('.proj-js');
+
+const imgs = document.querySelectorAll('.imgs-js');
+
+const sessao = document.querySelector('.galeria-js');
+
+const portfolioFlex = document.querySelector('.sessao_portfolio');
+
+function galeriaAtiva(i){
+  
+  divProjetos.forEach((ina)=>{
+    ina.classList.add('inativo')
+  });
+  
+  portfolioFlex.classList.add('ativo')
+  sessao.classList.add('ativo');
+  imgs[i].classList.toggle('ativo');
+  divProjetos[i].classList.toggle('ativo');
+}
+
+
+divProjetos.forEach((item,i)=>{
+  item.addEventListener('click', ()=>{
+    galeriaAtiva(i)
+  })
+});
+
+}
+navegassaoAtiva();

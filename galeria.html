@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="arquivos.css/style.css">
-  <link rel="stylesheet" href="arquivos.css/responsivo.css" media="screen and (max-width: 1400px)">
+  <link rel="stylesheet" href="arquivos.css/responsivo.css" media="screen and (max-width: 1300px)">
   <link rel="stylesheet" href="arquivos.css/mobile.css" media="screen and (max-width: 700px)">
   <title>IO</title>
 </head>
 
-<body class="body_white">
+<body class="body_black">
   <header>
     <div class="barra_menu menu_black">
       <a href="inicio.html"><img src="img/icone_menu_preto.svg" alt="logo_branca" style="width: 60px; margin-top: 5px;"></a>
@@ -38,11 +38,11 @@
 
   <section class="sessao_galeria">
     <div class="header_galeria">
-      <div class="container_pesquisa">
+      <form class="container_pesquisa">
         <img src="img/lupa.svg" alt="" class="lupa">
         <input type="text" placeholder="pesquisa" class="input_nav">
         <button type="submit">➤</button>
-      </div>
+      </form>
       <article>
         <h2>Galeria de Projetos</h2>
         <p>Bem Vindo a Galeria da iO, aqui você terá acesso aos meus projetos
@@ -52,31 +52,113 @@
       </article>
     </div>
 
-    <div class="container_projetos">
-      <h1>portfólio</h1>
-      <div class="sessao_sites js-sessao_site">
-        <img src="img/arrow_esquerda.svg" alt="seta esquerda" class="js_arrow">
-        <ul>
-          <li><img src="img/amazonia_portifolio.jpg" alt="site amazonia">Amazonia Blog</li>
-          <li><img src="img/wolf_portifolio.jpg" alt="site wolf">Wolf Blog</li>
-          <li><img src="img/bikcraft_portifolio.jpg" alt="site bikcraft">bikcraft</li>
-          <li><img src="img/bikcraft_portifolio.jpg" alt="site bikcraft">bikcraft</li>
-          <li><img src="img/bikcraft_portifolio.jpg" alt="site bikcraft">bikcraft</li>
-        </ul>
-        <img src="img/arrow_direita.svg" alt="seta direita" class="js_arrow">
-      </div>
+    <div class="galeria-js">
+      <nav class="sessao_portfolio">
+        <h1><a href="galeria.html">Portfólio</a></h1>
+        <div class="container_sites">
 
-      <div class="sessao_prototipos js-prototipos">
-        <img src="img/arrow_esquerda.svg" alt="seta esquerda" class="js_arrow_prototipo">
-        <ul>
-          <li><img src="img/prototipo_blog.jpg" alt="site amazonia">Amazonia Blog</li>
-          <li><img src="img/prototipo_surf.jpg" alt="site wolf">Surf</li>
-        </ul>
-        <img src="img/arrow_direita.svg" alt="seta direita" class="js_arrow_prototipo">
-      </div>
+          <div class="projeto div_bike proj-js">
+
+            <h2><a href="">Bikecraft</a></h2>
+
+            <p>Projeto de uma loja on-line de customização de bikes, com slides
+              e envios de formularios e meios de contatos.</p>
+            <ul>
+              <h3>Ferramentas:</h3>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div class="projeto div_blog proj-js">
+            <h2>Blog</h2>
+            <p>Projeto de uma loja on-line de customização de bikes, com slides
+              e envios de formularios e meios de contatos.</p>
+            <ul>
+              <h3>Ferramentas:</h3>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div class="projeto div_wolf proj-js">
+            <h2>Wolf</h2>
+            <p>Projeto de uma loja on-line de customização de bikes, com slides
+              e envios de formularios e meios de contatos.</p>
+            <ul>
+              <h3>Ferramentas:</h3>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+          <div class="projeto div_amazonia proj-js">
+            <h2>Amazonia</h2>
+            <p>Projeto de uma loja on-line de customização de bikes, com slides
+              e envios de formularios e meios de contatos.</p>
+            <ul>
+              <h3>Ferramentas:</h3>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container_prototipos">
+
+          <div class="projeto div_surfbot proj-js">
+            <h2>SurfBot</h2>
+            <p>Projeto de uma loja on-line de customização de bikes, com slides
+              e envios de formularios e meios de contatos.</p>
+            <ul>
+              <h3>Ferramentas:</h3>
+              <li>UX/UI</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Figma</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </nav>
+
+      <nav class="descricao_projetos">
+
+        <div class="bikecraft_img imgs-js">
+          <img src="img/img_bikecraft_galeria.jpg" alt="imagem do site de bike">
+          <img src="img/img2_bikecraft_galeria.jpg" alt="imagem do site de bike">
+        </div>
+
+        <div class="surfbot_img  imgs-js">
+          <img src="img/img_bikecraft_galeria.jpg" alt="imagem do site de bike">
+          <img src="" alt="">
+        </div>
+
+        <div class="blog_img imgs-js">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+
+        <div class="wolf_img imgs-js">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+
+        <div class="amazonia_img imgs-js">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+
+      </nav>
 
     </div>
-
   </section>
 
 
@@ -92,7 +174,7 @@
           <a href="manutencao.html"><img src="img/programacao.png" alt="Programação"></a>
         </div>
         <div>
-          <h2>Lugares para viajar</h2>
+          <h2>Viagem</h2>
           <a href="manutencao.html"><img src="img/viagens.png" alt="viagens"></a>
         </div>
       </nav>
@@ -132,7 +214,7 @@
       <p>©Todos os direitos reservados.</p>
     </div>
   </footer>
-  <script src="script/script.js"></script>
+  <script src="script/script.js" defer></script>
 </body>
 
 </html>

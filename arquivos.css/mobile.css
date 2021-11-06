@@ -24,14 +24,33 @@
   grid-template-rows: 2fr 2fr;
   grid-gap: 15px;
   justify-content: center;
+  justify-self: center;
   align-items: center;
-  padding: 30px 0 20px 20px;
+  padding: 30px 0;
+}
+@media(max-width:400px){
+  .menu_footer {
+    min-width: 200px;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+    
+  }
+  .menu_footer li{
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
 }
 .menu_footer ul {
   margin-bottom: 50px;
 }
 .menu_conteudo a img{
-  width: 300px;
+  max-width: 300px;
+}
+.sessao_menu_conteudo::before{
+  max-width: 200px;
 }
 
 /*barra de menu*/
@@ -152,26 +171,32 @@
 }
 /*Galeria*/
 .header_galeria{
-  height: 400px;
-  padding: 50px 30px;
+  max-width: 800px;
+  height: 500px;
+  padding: 50px 10px;
 }
-.header_galeria article{
+.header_galeria{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
 }
-.header_galeria p{
-  max-width: 400px;
+.input_nav{
+  max-width: 300px;
+}
+.header_galeria h2{
+  margin-top: 30px;
+}
+.header_galeria article p{
+  max-width: 300px;
 }
 /*blog caixa de pesquisa*/
 .header_blog{
   align-items: center;
   padding-top: 50px;
 }
-.input_nav{
-  width: 300px;
-}
+
 .container_pesquisa{
   width: 300px;
 }
