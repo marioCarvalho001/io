@@ -1,11 +1,12 @@
 *{margin: 0;
   padding: 0;
   text-decoration: none;
-  letter-spacing: .09em;
+  letter-spacing: .1em;
 }
-p,a{
+p,a,li,h3{
   font-family: 'Zen Kaku Gothic Antique', sans-serif;
   font-size: 1em;
+  font-weight: 400;
   color: #fcfcfc;
 }
 h2,h1{
@@ -32,7 +33,7 @@ body{
 .body_white{
   background: #fcfcfc;
 }
-.button_estilo {
+.button_estilo{
   margin-bottom: 20px;
   padding: 5px 20px;
   background: transparent;
@@ -157,7 +158,6 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
 }
 .js-button_hamburguer{
   display: none;
@@ -170,8 +170,7 @@ footer{
 }
 .barra_menu ul li{
   color: #0D0B0C;
-  font-weight: 300; 
-  letter-spacing: .15em;
+  font-weight: 500;
 }
 .barra_menu .button_estilo{
   margin: 0;
@@ -212,14 +211,11 @@ footer{
   }
 }
 .article_boa_vindas{
+  max-width: 550px;
   color: #fcfcfc;
 }
 .article_boa_vindas h2{
   margin-bottom: 20px;
-  font-size: 1.5em;
-}
-.article_boa_vindas p{
-  font-size: 1em;
 }
 /*navegaçao*/
 .navegacao {
@@ -249,7 +245,6 @@ footer{
 }
 .container_sobre h2{
   margin-bottom: 20px;
-  font-size: 1.5em;
 }
 .informacoes {
   max-width: 600px;
@@ -267,7 +262,6 @@ footer{
 }
 .habilidades_lista ul{
   list-style: circle;
-  font-size: 1em;
 }
 .habilidades_lista li{
   margin-bottom: 10px;
@@ -282,8 +276,8 @@ footer{
 /*lado direito do container*/
 .historico_profissional{
   max-width: 450px;
-  height: 500px;
-  background-image: url(../img/ciclista_motivacional.png);
+  height: 600px;
+  background-image: url(../img/historico_bg.jpg);
   background-size: cover;
   display: flex;
 }
@@ -353,13 +347,11 @@ footer{
 .header_galeria article h2{
   margin-bottom: 50px;
 }
-.header_galeria article p{
-  font-size: 1em;
-}
 .header_galeria article p a{
-  font-weight: 600;
   color: #0D0B0C;
+  font-weight: 700;
 }
+
 /*sessao_portifolio*/
 
 .galeria-js{
@@ -389,13 +381,16 @@ footer{
   font-size: 2em;
   text-align: center;
   margin-bottom: 100px;
+  cursor: pointer;
 }
-.sessao_portfolio a{
-  color: #fcfcfc;
+.sessao_portfolio h1:hover, .sessao_portfolio a:hover{
+  color: #FFF447;
 }
+
 .projeto{
   cursor: pointer;
 }
+
 .projeto::after{
   content: '';
   display: block;
@@ -431,7 +426,7 @@ footer{
 }
 
 .div_bike:hover, .div_blog:hover,.div_wolf:hover,.div_amazonia:hover,.div_surfbot:hover{
-  background-image: url(../img/bikcraft_portifolio.jpg);
+  background-image: url(../img/img_bikecraft_galeria.jpg);
   background-size: cover;
   animation: exibir 1.5s ;
 }
@@ -499,7 +494,6 @@ footer{
 
 
 /*js-ativo*/
-
 .sessao_portfolio.ativo{
   max-width: 500px;
   display: flex;
@@ -519,9 +513,6 @@ footer{
   background-image: none;
   animation: none;
 }
-.projeto.ativo a:hover{
-  color: #3C3939;
-}
 .projeto.ativo a{
   list-style: none;
   text-decoration: none;
@@ -533,7 +524,7 @@ footer{
   display: none;
 }
 .imgs-js.ativo{
-  max-width: 500px;
+  max-width: 700px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -605,91 +596,358 @@ footer{
 
 /*sessao contato*/
 
-.container_formulario{
-  padding: 100px ;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  color: #fcfcfc;
+
+
+
+@media(max-width: 1300px){
+  
+.nome_botton{
+  margin-top: 150px;
 }
-.sessao_formulario, .sessao_redes_sociais{
-  width: 600px;
-  height: 600px;
-  display: flex;
-  flex-wrap: wrap;
+.menu_footer{
+  padding: 30px 50px 20px 50px;
+}
+
+/*barra de menu*/
+.barra_menu{
+  padding: 0 50px;
+  grid-template-columns: 1fr 3fr;
+}
+
+
+/*sessao boas vindas*/
+.bem_vindo{
+  padding: 100px 50px 0 50px;
+}
+.container_bem_vindo{
   flex-direction: column;
-  box-sizing: border-box;
-  padding: 40px;
-  border: #fcfcfc solid 1px;
+  align-items: center;
 }
-.sessao_formulario span, .sessao_redes_sociais span{
-  width: 520px;
-  display: flex;
-  justify-content: center;
+.article_boa_vindas{
+  padding-top: 70px;
+}
+.article_boa_vindas h2{
+  margin-bottom: 40px;
+}
+/*container sobre*/
+.container_sobre{
+  flex-direction: column;
+  align-items: center;
+}
+.habilidades_lista{
+  margin-bottom: 100px;
+}
+/*menu de conteudo do footer*/
+.sessao_menu_conteudo::before{
+  width: 400px;
+}
+.menu_conteudo{
+  display: block;
   margin-bottom: 50px;
 }
-.sessao_formulario input,
-.sessao_formulario textarea{  
-  border: none;
-  height: 30px;
-  font-size: 1em;
-  font-weight: 300;
-  padding: 0;
-  margin-bottom: 15px;
-  color: #fcfcfc;
-  border-bottom: #fcfcfc solid 2px;
-  border-radius: 0;
-  box-sizing: border-box;
-  background: transparent;
+.menu_conteudo h2{
+  margin-top: 50px;
 }
-.sessao_formulario textarea{
-  width: 500px;
-  height: 100px;
-  overflow: auto;
+.menu_conteudo a img{
+  margin-bottom: 50px;
 }
-textarea:focus{
-  outline: none;
-}
-.sessao_formulario div input{
+/*Galeria*/
+
+/*sessao_portifolio*/
+.sessao_portfolio{
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
   display: flex;
-  flex-wrap: wrap;
-  width: 245px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fcfcfc;
 }
-.sessao_formulario label{
-  font-weight: 600;
-  letter-spacing: .05em;
+.sessao_portfolio div{
+  max-width: 350px;
 }
 
-.sessao_formulario button{
-  width: 245px;
-  height: 50px;
-  margin-top: 30px;
-  border-radius: 15px;
-  border: none;
-  font-size: 1.2em;
-  color: #3C3939;
-  background: #fcfcfc;
-  font-weight:600;
-  cursor: pointer;
+/* barra de pesquisa da galeria*/
+.container_pesquisa{
+  max-width: 500px;
 }
 
-.sessao_redes_sociais img{
-  width: 40px;
-  margin-right: 10px;
-  margin-left: 25px;
+/*blog*/
+.header_blog{
+  height: 350px;
 }
-.sessao_redes_sociais a{
-  color: #fcfcfc;
-  margin-bottom: 30px;
-  letter-spacing: .05em;
-  display: flex;
+.sessao_fotos{
+  width: 100%;
+  height: 200px;
+}
+.sessao_viagen_artigo{
+  flex-direction: column;
   align-items: center;
 }
+.sessao_viagens, .sessao_artigos{
+  width: 400px;
+  height: 350px;
+}
+.sessao_viagens{
+  margin-bottom: 100px;
+}
+/*sessao contato*/
 
-/*aniamção com js para deixar o input ativo*/
-.sessao_formulario  div.ativo  {
-  background: red;
+.container_formulario{
+  padding: 100px 50px 50px 50px;
+  flex-direction: column;
+  align-items: center;
+}
+.sessao_formulario{
+  margin-bottom: 50px;
+}
+
 
 }
 
+
+@media(max-width: 700px){
+  p,a{
+    font-size: .9em;
+  }
+  li{
+    font-size: 1.1em;
+    color: #fcfcfc;
+  }
+  h1{
+    font-size: 1.7em;
+  }
+  h2{
+    font-size: 1.2em;
+  }
+  
+  .descricao a img{
+    width: 60px;
+    margin: 50px 0 30px 0;
+  }
+  .descricao h1 {
+    margin-bottom: 50px;
+    
+    width: 100%;
+  }
+  .descricao h2{
+    width: 100%;
+    margin-bottom: 100px;
+    
+  }
+  .nome_botton{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+  }
+  /*Menu Footer*/
+  .menu_footer {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 2fr 2fr;
+    grid-gap: 15px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    padding: 30px 0;
+  }
+  @media(max-width:400px){
+    .menu_footer {
+      min-width: 200px;
+      display: flex;
+     flex-direction: column;
+      align-items: center;
+      padding: 30px 0;
+      
+    }
+    .menu_footer li{
+      list-style: none;
+      margin-bottom: 30px;
+      margin-left: 0;
+    }
+  }
+  .menu_footer ul {
+    margin-bottom: 50px;
+  }
+  .menu_conteudo a img{
+    max-width: 300px;
+  }
+  .sessao_menu_conteudo::before{
+    max-width: 200px;
+  }
+  
+  /*barra de menu*/
+  .barra_menu{
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .js-button_hamburguer{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: #262626;
+    font-size: 1.5em;
+    gap: .5em;
+  }
+  
+  .icone_hamburguer{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: #262626 2px solid;
+  }
+  .icone_hamburguer::after, .icone_hamburguer::before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+    position: relative;
+    margin-top: 8px;
+  }
+  .icone_hamburguer.ativo{
+    border-top-color:transparent;
+    padding-bottom: 12px;
+  }
+  .icone_hamburguer.ativo::after{
+    transform: rotate(135deg);
+    margin-top: 4px;
+  }
+  .icone_hamburguer.ativo::before{
+    transform: rotate(-135deg);
+    margin-top: 4px;
+    top: 6px;
+  }
+  .navegacao_menu{
+    visibility: hidden;
+    overflow-y: hidden;
+    width: 100%;
+    height: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:start;
+    gap: 40px;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    background: #262626;
+    z-index: 100;
+    transition: .5s;
+  }
+  .navegacao_menu.ativo{
+    height: calc(100vh - 69px) ;
+    visibility: visible;
+    overflow-y: auto;
+  }
+  .barra_menu ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+    list-style: none;
+    gap: 40px;
+  }
+  .barra_menu ul li{
+    padding: 20px;
+    color: #fff;
+  }
+  .barra_menu .button_estilo{
+    color: #fcfcfc;
+  }
+  
+  /*section bem vindo*/
+  
+  
+  .bem_vindo{
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bem_vindo img{
+    max-width: 300px;
+  }
+  
+  .article_boa_vindas h2 img{
+    width: 20px;
+  }
+  .article_boa_vindas p{
+    max-width: 300px;
+  }
+  .informacoes {
+    max-width: 300px;
+  }
+  .historico_profissional{
+    max-width: 300px;
+  }
+  .historico_profissional article{
+    width: 300px;
+  }
+  .habilidades_lista{
+    max-width: 200px;
+  }
+  /*Galeria*/
+  .header_galeria{
+    max-width: 800px;
+    height: 500px;
+    padding: 50px 10px;
+  }
+  .header_galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .input_nav{
+    max-width: 300px;
+  }
+  .header_galeria h2{
+    margin-top: 30px;
+  }
+  .header_galeria article p{
+    max-width: 300px;
+  }
+  /*blog caixa de pesquisa*/
+  .header_blog{
+    align-items: center;
+    padding-top: 50px;
+  }
+  
+  .container_pesquisa{
+    width: 300px;
+  }
+  .sessao_viagens, .sessao_artigos{
+    width: 300px;
+    height: 200px;
+  }
+  /*sessao contato*/
+  .container_formulario{
+    padding: 0;
+  }
+  .sessao_formulario,
+  .sessao_redes_sociais{
+    padding: 0;
+    max-width: 500px;
+    border: none;
+  }
+  .sessao_formulario input,.sessao_formulario textarea{
+    max-width: 300px;
+  }
+  .sessao_formulario span, .sessao_redes_sociais span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  
+}

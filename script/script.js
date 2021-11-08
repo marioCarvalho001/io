@@ -95,5 +95,30 @@ divProjetos.forEach((item,i)=>{
   })
 });
 
+
+const reset =  document.querySelector('.reset-js');
+
+function resetClass(){
+  reset.addEventListener('click', ()=>{
+  
+      divProjetos.forEach((ina)=>{
+        ina.classList.remove('inativo')
+      });
+      imgs.forEach((i)=>{
+        i.classList.remove('ativo');
+      });
+      divProjetos.forEach((i)=>{
+        i.classList.remove('ativo');
+      })
+      portfolioFlex.classList.remove('ativo');
+      sessao.classList.remove('ativo');
+    
+  })
 }
+resetClass();
+
+}
+
 navegassaoAtiva();
+
+

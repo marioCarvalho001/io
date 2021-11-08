@@ -5,17 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/icon.svg">
   <link rel="stylesheet" href="arquivos.css/style.css">
-  <link rel="stylesheet" href="arquivos.css/responsivo.css" media="screen and (max-width: 1300px)">
-  <link rel="stylesheet" href="arquivos.css/mobile.css" media="screen and (max-width: 700px)">
-  <title>IO</title>
+  <title>iODeveloper</title>
 </head>
 
 <body class="body_black">
   <header>
-    <div class="barra_menu menu_black">
-      <a href="inicio.html"><img src="img/icone_menu_preto.svg" alt="logo_branca" style="width: 60px; margin-top: 5px;"></a>
+    <div class="barra_menu">
+      <a href="inicio.html"><img src="img/icone_menu_branco.svg" alt="logo_branca" style="width: 60px; margin-top: 5px;"></a>
       <nav class="navegacao_menu js-menu_hamburguer">
         <ul role="menu">
           <a href="inicio.html">
@@ -45,21 +45,21 @@
       </form>
       <article>
         <h2>Galeria de Projetos</h2>
-        <p>Bem Vindo a Galeria da iO, aqui você terá acesso aos meus projetos
-          e trabalhos, já realizados. Essa área é destinada para publicação de
-          projetos já prontos! para informações do codigos e prototipos
-          acoselho a acessa meu <a href="https://github.com/marioCarvalho001" target="_blank">Github</a> e <a href="https://www.behance.net/marioCarvalho001" target="_blank">Behance.</a></p>
+        <p>Olá! Essa é minha Galeria de trabalho, onde eu publico meus
+          projetos e prototipos finalizados e prontos para uso.
+          para mais informações e detalhes da criação dos projetos, deixarei
+          meu <a href="https://github.com/marioCarvalho001" target="_blank">Github</a> e <a href="https://www.behance.net/marioCarvalho001" target="_blank">Behance</a> disponível. </p>
       </article>
     </div>
 
-    <div class="galeria-js">
+    <div class="galeria-js" id="galeria">
       <nav class="sessao_portfolio">
-        <h1><a href="galeria.html">Portfólio</a></h1>
+        <h1 class="reset-js">Portfólio</h1>
         <div class="container_sites">
 
           <div class="projeto div_bike proj-js">
 
-            <h2><a href="">Bikecraft</a></h2>
+            <h2><a href="https://mariocarvalho001.github.io/Bikcraft/" target="_blank">Bikecraft</a></h2>
 
             <p>Projeto de uma loja on-line de customização de bikes, com slides
               e envios de formularios e meios de contatos.</p>
@@ -74,9 +74,9 @@
           </div>
 
           <div class="projeto div_blog proj-js">
-            <h2>Blog</h2>
-            <p>Projeto de uma loja on-line de customização de bikes, com slides
-              e envios de formularios e meios de contatos.</p>
+            <h2><a href="">Blog</a></h2>
+            <p>Projeto sobre uma página de vendas simples e direta, com
+              planos pré-definidos para o cliente escolher.</p>
             <ul>
               <h3>Ferramentas:</h3>
               <li>HTML5</li>
@@ -85,22 +85,12 @@
             </ul>
           </div>
 
-          <div class="projeto div_wolf proj-js">
-            <h2>Wolf</h2>
-            <p>Projeto de uma loja on-line de customização de bikes, com slides
-              e envios de formularios e meios de contatos.</p>
-            <ul>
-              <h3>Ferramentas:</h3>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Figma</li>
-            </ul>
-          </div>
 
           <div class="projeto div_amazonia proj-js">
-            <h2>Amazonia</h2>
-            <p>Projeto de uma loja on-line de customização de bikes, com slides
-              e envios de formularios e meios de contatos.</p>
+            <h2><a href="">Amazonia</a> </h2>
+            <p>Blog sobre animais da amazônia; a floresta; informações sobre a
+              história do local e sobres
+              os índios da região. Criado com a finalidade de ser um site de ong.</p>
             <ul>
               <h3>Ferramentas:</h3>
               <li>HTML5</li>
@@ -113,9 +103,10 @@
         <div class="container_prototipos">
 
           <div class="projeto div_surfbot proj-js">
-            <h2>SurfBot</h2>
-            <p>Projeto de uma loja on-line de customização de bikes, com slides
-              e envios de formularios e meios de contatos.</p>
+            <h2><a href="">SurfBot</a> </h2>
+            <p>Protótipo de uma pagina de venda para um curso de surf.
+              com informações sobre o local, comentarios de alunos e fomurlario
+              de agendamento de aulas e meios de pagamento.</p>
             <ul>
               <h3>Ferramentas:</h3>
               <li>UX/UI</li>
@@ -136,23 +127,18 @@
           <img src="img/img2_bikecraft_galeria.jpg" alt="imagem do site de bike">
         </div>
 
-        <div class="surfbot_img  imgs-js">
-          <img src="img/img_bikecraft_galeria.jpg" alt="imagem do site de bike">
-          <img src="" alt="">
-        </div>
-
         <div class="blog_img imgs-js">
-          <img src="" alt="">
-          <img src="" alt="">
-        </div>
-
-        <div class="wolf_img imgs-js">
           <img src="" alt="">
           <img src="" alt="">
         </div>
 
         <div class="amazonia_img imgs-js">
           <img src="" alt="">
+          <img src="" alt="">
+        </div>
+
+        <div class="surfbot_img  imgs-js">
+          <img src="img/img_bikecraft_galeria.jpg" alt="imagem do site de bike">
           <img src="" alt="">
         </div>
 
@@ -163,6 +149,7 @@
 
 
   <footer>
+
     <section class="sessao_menu_conteudo">
       <nav class="menu_conteudo">
         <div>
@@ -180,39 +167,40 @@
       </nav>
     </section>
 
-    <div class="menu_footer">
+    <nav class="menu_footer">
       <ul>
-        <h2>Inicio</h2>
+        <h2>Início</h2>
         <li>
           <a href="index.html">Apresentação</a>
         </li>
         <li>
-          <a href="inicio.html">sobre</a>
+          <a href="inicio.html">Sobre</a>
         </li>
       </ul>
 
       <ul>
         <h2>Galeria</h2>
-        <li><a href="galeria.html">portifolio</a></li>
-        <li><a href="galeria.html">prototipos</a></li>
+        <li><a href="galeria.html">Portfólio</a></li>
       </ul>
       <ul>
         <h2>Blog</h2>
-        <li><a href="blog.html">viagens</a></li>
-        <li><a href="blog.html">artigos</a></li>
-        <li><a href="blog.html">fotos</a></li>
+        <li><a href="blog.html">Viagens</a></li>
+        <li><a href="blog.html">Artigos</a></li>
+        <li><a href="blog.html">Fotos</a></li>
       </ul>
       <ul>
         <h2>Contatos</h2>
         <li><a href="contato.html">Mensagem</a></li>
-        <li><a href="mailto:mariocarvalho755@gmail.com">e-mail</a></li>
-        <li><a href="https://www.workana.com/freelancer/5b7d940b04326bb69617fd01150c40f5" target="_blank">workana</a></li>
+        <li><a href="mailto:mariocarvalho755@gmail.com">E-mail</a></li>
+        <li><a href="https://www.workana.com/freelancer/5b7d940b04326bb69617fd01150c40f5" target="_blank">Workana</a></li>
         <li><a href="https://www.linkedin.com/in/mario-carvalho-4204a3182/" target="_blank">Linkedin</a></li>
       </ul>
-    </div>
+    </nav>
+
     <div class="barra_final">
-      <p>©Todos os direitos reservados.</p>
+      <p>©2021 iO Developer.</p>
     </div>
+
   </footer>
   <script src="script/script.js" defer></script>
 </body>

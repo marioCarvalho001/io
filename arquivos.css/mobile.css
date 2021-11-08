@@ -1,16 +1,30 @@
+p,a{
+  font-size: .9em;
+}
+li{
+  font-size: 1.1em;
+  color: #fcfcfc;
+}
+h1{
+  font-size: 1.7em;
+}
+h2{
+  font-size: 1.2em;
+}
+
 .descricao a img{
   width: 60px;
   margin: 50px 0 30px 0;
 }
 .descricao h1 {
   margin-bottom: 50px;
-  font-size: 1.3em;
+  
   width: 100%;
 }
 .descricao h2{
   width: 100%;
   margin-bottom: 100px;
-  font-size: 1em;
+  
 }
 .nome_botton{
   position: absolute;
@@ -67,16 +81,17 @@
   align-items: center;
   background: transparent;
   border: 0;
-  color: #fcfcfc;
-  font-size: 1.3em;
+  color: #262626;
+  font-size: 1.5em;
   gap: .5em;
 }
+
 .icone_hamburguer{
   width: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: #fcfcfc 2px solid;
+  border-top: #262626 2px solid;
 }
 .icone_hamburguer::after, .icone_hamburguer::before{
   content: '';
@@ -131,12 +146,13 @@
   list-style: none;
   gap: 40px;
 }
-.barra_menu li{
+.barra_menu ul li{
   padding: 20px;
-  font-size: 1.3em;
+  color: #fff;
 }
-
-
+.barra_menu .button_estilo{
+  color: #fcfcfc;
+}
 
 /*section bem vindo*/
 
@@ -150,15 +166,12 @@
 .bem_vindo img{
   max-width: 300px;
 }
-.article_boa_vindas h2{
-  font-size: 1em;
-}
+
 .article_boa_vindas h2 img{
   width: 20px;
 }
 .article_boa_vindas p{
   max-width: 300px;
-  font-size: .8em;
 }
 .informacoes {
   max-width: 300px;
@@ -168,6 +181,9 @@
 }
 .historico_profissional article{
   width: 300px;
+}
+.habilidades_lista{
+  max-width: 200px;
 }
 /*Galeria*/
 .header_galeria{
